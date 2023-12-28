@@ -1,0 +1,19 @@
+{
+  "name": "wardfeys",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ward",
+  "license": "ISC",
+  "description": "Solar Solutions",
+  "repository": {
+    "type": "git",
+    "url": "gh repo clone wardfk/solarsolutions"
+  },
+  "keywords": [
+    "Solar",
+    "Solutions"
+  ]
+}
