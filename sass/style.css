@@ -47,8 +47,8 @@ header#header .first-cont {
   width: 100%;
   margin: auto;
 }
-header#header .first-cont .logo p {
-  color: blue;
+header#header .first-cont .logo img {
+  width: 100px;
 }
 header#header .first-cont .menu a {
   color: yellow !important;
