@@ -10,6 +10,37 @@ function toggleMenu() {
   }
 
 
+  // Go To Top
+
+  document.addEventListener("scroll", handleScroll);
+  // get a reference to our predefined button
+  var goToTop = document.getElementById("go-to-top");
+  
+  function handleScroll() {
+    var scrollableHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var GOLDEN_RATIO = 2.8;
+  
+    if ((document.documentElement.scrollTop / scrollableHeight ) > GOLDEN_RATIO) {
+      //show button
+      if(!goToTop.classList.contains("showScrollBtn"))
+      goToTop.classList.add("showScrollBtn")
+    } else {
+      //hide button
+      if(goToTop.classList.contains("showScrollBtn"))
+      goToTop.classList.remove("showScrollBtn")
+    }
+  }
+  
+  goToTop.addEventListener("click", scrollToTop);
+  
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+
+
   // CAROUSEL
   const buttons = document.querySelectorAll("[data-carousel-button]");
 

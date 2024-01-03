@@ -67,6 +67,24 @@ header#header{
     
 }
 
+#go-to-top{
+    i{
+        padding: 20px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 50px;
+        border: 1px solid black;
+    }
+    :hover{
+        cursor: pointer;
+    }
+}
+
 
 #menu-popup{
     padding: 0 20px;
