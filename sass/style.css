@@ -252,8 +252,17 @@ section#services .card .content-card p {
   align-items: center;
   width: 70%;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.0901960784);
+  background-color: rgba(0, 0, 0, 0.3843137255);
   border-radius: 5px;
+}
+.slide .logo {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.slide .logo img {
+  width: 10%;
 }
 
 .name {
@@ -263,6 +272,7 @@ section#services .card .content-card p {
 
 .quote {
   text-align: center;
+  width: 80%;
 }
 
 .slide[data-active] {
