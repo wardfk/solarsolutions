@@ -228,15 +228,17 @@ section#services .card .content-card p {
 .carousel {
   max-width: 1440px;
   width: 100%;
-  height: 250px;
+  height: 420px;
   position: relative;
   margin: auto;
+  padding: 0;
 }
 
 .carousel > ul {
   margin: 0;
-  padding: 0;
+  padding: 20px 0px;
   list-style: none;
+  height: 100%;
 }
 
 .slide {
@@ -250,7 +252,8 @@ section#services .card .content-card p {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 70%;
+  width: 80%;
+  height: 350px;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.3843137255);
   border-radius: 5px;
@@ -273,6 +276,7 @@ section#services .card .content-card p {
 .quote {
   text-align: center;
   width: 80%;
+  font-size: 16px;
 }
 
 .slide[data-active] {
@@ -292,7 +296,7 @@ section#services .card .content-card p {
   color: #c4c4c4;
   cursor: pointer;
   border-radius: 0.25rem;
-  padding: 0 0.5rem;
+  padding: 0;
 }
 
 .carousel-button:hover, .carousel-button:focus {
@@ -305,11 +309,11 @@ section#services .card .content-card p {
 }
 
 .carousel-button.prev {
-  left: 1rem;
+  left: 0px;
 }
 
 .carousel-button.next {
-  right: 1rem;
+  right: 0px;
 }
 
 section#projects {
@@ -335,6 +339,7 @@ section#projects .project {
 section#projects .project img {
   width: 100%;
   border-radius: 20px;
+  height: 250px;
 }
 section#projects .project .content-card {
   margin-top: 40px;
@@ -371,13 +376,13 @@ section#contact .form-contact {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, 0.031372549);
-  padding: 40px;
+  padding: 20px;
   border-radius: 15px;
 }
 section#contact .form-contact form {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 }
 section#contact .form-contact form input, section#contact .form-contact form select, section#contact .form-contact form textarea {
   margin-bottom: 15px;
@@ -394,6 +399,7 @@ section#contact .form-contact form input[type=submit] {
   justify-content: center;
   align-items: center;
   border-radius: 50px;
+  cursor: pointer;
 }
 section#contact .content-contact {
   display: flex;
@@ -539,7 +545,10 @@ footer#footer .container .right iframe {
     flex-direction: row;
   }
   section#projects .project img {
-    width: 35%;
+    min-width: 35%;
+    max-width: 16%;
+    min-height: 209px;
+    max-height: 210px;
   }
   section#projects .project .content-card {
     display: flex;
@@ -674,8 +683,9 @@ footer#footer .container .right iframe {
     text-align: center;
   }
   section#projects .projects .project img {
-    width: 100%;
+    min-width: 100%;
     border-radius: 20px;
+    max-height: 160px;
   }
   section#projects .projects .project .content-card {
     margin-top: 20px;
@@ -752,6 +762,21 @@ footer#footer .container .right iframe {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    width: 100%;
+  }
+  footer#footer .container .left {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  footer#footer .container .left .link-logo {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  footer#footer .container .left .link-logo img {
+    width: 100%;
   }
   footer#footer .container .right iframe {
     height: 300px;
@@ -792,5 +817,8 @@ footer#footer .container .right iframe {
   section#why .container {
     width: 65%;
     margin: auto;
+  }
+  section#projects .project img {
+    max-height: 280px;
   }
 }/*# sourceMappingURL=style.css.map */
